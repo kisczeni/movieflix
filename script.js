@@ -114,7 +114,7 @@ $(document).ready( () => {
 })
 
 $(document).ready( () => {
-    $("#dropwsdown").mouseout( () => {
+    $("#dropdown").mouseout( () => {
         $("#sublist").css("display", "none");
     })
 })
