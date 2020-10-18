@@ -1,0 +1,367 @@
+* {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+
+.header-container {
+    width: 100vw;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2196f3;
+    padding: 1em 3.75em;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo-div:hover {
+    border-bottom: 0.125em solid #2196f3;
+    color: #e7e7e7;
+}
+
+#logo-div {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    border-bottom: 0.125em solid #e7e7e7;
+    border-radius: 0;
+}
+
+#para-header {
+    position: absolute;
+    top: 7em;
+    left: 1em;
+    display: none; 
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;
+    transform: rotate(-20deg);
+}
+
+nav {
+    height: 2em;
+    font-weight: 700;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    width: 13.5em;
+    background-color: #171717;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1.5em;
+    padding: 1em 1.5em;
+}
+
+nav ul li a:hover {
+    background-color: #2196f3;
+    border-radius: 7px;
+    color: black;
+}
+
+nav ul li ul {
+    display: none;
+
+}
+
+nav ul li ul li {
+    position: relative;
+}
+
+.sublist-item {
+    opacity: 0.9;
+}
+
+/* about */
+
+#about-section {
+    width: 80vw;
+    margin: 3em auto;
+}
+
+.about-container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 100vw;
+    margin: 0 auto;
+    text-align: justify;
+}
+.about-text p {
+    padding: 0.6em;
+}
+
+.img-wrapper {
+    width: 100vw;
+    height: 30em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+img {
+    width: 25em;
+    padding: 0.6em 0.6em 1.25em 0.6em;
+    border: 0.1em solid #BFBFBF;
+    background-color: #e7e7e7;
+    box-shadow: 1em 1em 6em #666;
+}
+
+#right {
+    float: left;
+    transform: rotate(7deg);
+}
+
+#left {
+    float: left;
+    transform: rotate(-8deg);
+}
+/* about end */
+
+/* Movies */
+#create-form, #update-form, #delete-form {
+    display: none;
+}
+
+.films-section {
+    width: 80vw;
+    margin: 3em auto;
+} 
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 50vw;
+    text-align: center;
+    margin: 0.9375em auto;
+}
+
+table tr td {
+    padding: 0.75em;
+    border: 0.01em solid lightblue;
+}
+
+#content-wrapper {
+    
+}
+
+#line-div {
+    width: 60vw;
+    height: 0.3em;
+    margin: 0.3em auto;
+    background-color: #e7e7e7;
+    border-radius: 0.6em;
+}
+
+#form-wrapper {
+    width: 100vw;
+    margin: 2em auto;
+    text-align: center;
+}
+
+button {
+    margin: 1em 0.625em;
+    width: 8.75em;
+    height: 2.5em; 
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    background-color:#333;
+    color: rgb(124, 124, 125);
+    border-radius: 0.625em;
+    border: none;
+    outline: none;
+    box-shadow: -0.1em -0.1em 0.3em #555,
+                /* 0.3em 0.3em 0.9em  #555, */
+                /* inset 0.3em 0.3em 0.9em  #555, */
+                inset -0.1em -0.1em 0.3em #555;
+}
+
+.form-wrapper-button:active {
+    box-shadow: -0.3em -0.3em 0.9em #444,
+                0.3em 0.3em 0.9em #222,
+                inset -0.2em -0.2em 0.3em #444,
+                inset 0.2em 0.2em 0.3em #222;              
+    font-size: 1em;
+}
+
+#create-button:hover {
+    color: rgb(154, 205, 50);
+    text-shadow: 0 0 0.6em;
+}
+
+#update-button:hover {
+    color: rgb(255, 165, 0);
+    text-shadow: 0 0 0.6em;
+}
+
+#delete-button:hover {
+    color: rgb(240, 113, 113);
+    text-shadow: 0 0 0.6em;
+}
+
+.small-button {
+    width: 4.4em;
+    height: 1.9em;
+    margin: 1em 0 2em 0;
+    outline: none;
+    border-radius: 0.25em;
+    background-color: #333;
+    cursor: pointer;
+}
+
+#small-button-green {
+    border: 0.01em solid rgb(154, 205, 50);
+    color:  rgb(154, 205, 50);
+}
+
+#small-button-orange {
+    border: 0.01em solid rgb(255, 165, 0);
+    color: rgb(255, 165, 0);
+}
+
+#small-button-red {
+    border: 0.01em solid  rgb(240, 113, 113);
+    color: rgb(240, 113, 113);
+}
+
+#small-button-green:hover {
+    color: #255784;
+    background-color: rgb(154, 205, 50);
+    box-shadow: 0 0 0.6em #666666, 0 0 1.2em  #666666, 0 0 1.8em  #666666;
+    border: none;
+    /* transition-delay: 1s; */
+}
+
+#small-button-orange:hover {
+    color: #255784;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0 0 0.6em #666666, 0 0 1.2em  #666666, 0 0 1.8em  #666666;
+    border: none;
+    /* transition-delay: 1s; */
+}
+
+#small-button-red:hover {
+    color: #255784;
+    background-color:rgb(240, 113, 113);
+    box-shadow: 0 0 0.6em #666666, 0 0 1.2em  #666666, 0 0 1.8em  #666666;
+    border: none;
+    /* transition-delay: 1s; */
+}
+
+input[type="text"]{
+    margin: 0.3125em;
+    width: 16em;
+    height: 2em;
+    padding: 0.2em;
+}
+
+/* end movies */
+
+/* contact */
+
+.contact-section {
+    width: 100vw;
+    height: 50vh;
+    background-color:  #e7e7e7;
+    color: #333;
+}
+
+.contact-title {
+    margin: 2em auto;
+    text-transform: uppercase
+}
+
+.social-div {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    transform: rotateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    width: 5.5em;
+    height: 5.5em;
+    margin: 0.8em;
+    border-radius: 30%;
+    box-shadow: 0 0.3em 0.9em -0.3em #00000070; 
+    background-color: #f1f1f1;
+    color: #3498db;
+    overflow: hidden;
+}
+
+.icon i {
+    line-height: 5.5em;
+    font-size: 1.6em;
+    transition: 0.2s linear;
+}
+
+.icon:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.icon::befor {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.icon:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+}
+
