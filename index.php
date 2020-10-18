@@ -166,7 +166,7 @@
         </main>
         <footer class="contact-section">
             <a name="contact"></a>
-            
+    	    <!--      missing        -->
         </footer>
         <script src="script.js"></script>
     </body>
