@@ -89,11 +89,7 @@ let isDeleteFormDisplaying = false;
     })
 }
 
-/* $(document).ready( () => {
-    $("#myAnchor").click( function (event){
-        event.preventDefault();
-    })
-}) */
+// logo text 
 
 $(document).ready( () => {
     $("#logo-span").mouseover( () => {
@@ -106,6 +102,8 @@ $(document).ready( () => {
         $("#para-header").css("display", "none");
     })
 })
+
+// dropdown menu
 
 $(document).ready( () => {
     $("#dropdown").mouseover( () => {
