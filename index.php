@@ -160,7 +160,6 @@
                         <input type="text" placeholder="Enter movie ID (number)" name="delete-id" required class="only-number"> <br>
                         <input type="submit" value="Delete" name="delete-submit" class="small-button" id="small-button-red"> <br>
                     </form>
-                    <!-- <a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a> -->
                 </div>
             </section>
         </main>
